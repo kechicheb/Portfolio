@@ -456,6 +456,7 @@ section:not(:first-child) {
 }
 .projects .box-container:last-child {
   display: none;
+  margin-top:2rem ;
 }
 .projects .box-container .box img {
   height: 100%;
