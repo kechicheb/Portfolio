@@ -394,6 +394,7 @@ section:not(:first-child) {
   font-size: 1.4rem;
   line-height: 1.8;
   color: var(--light-color);
+  text-transform: none;
 }
 
 .services .box-container .box::before {
@@ -521,7 +522,8 @@ section:not(:first-child) {
   padding-block: 2px 7px;
   font-size: 12px;
   padding-left: 5px;
-  color: rgb(206, 14, 14);
+  color: #dc3545;
+  display: none;
 }
 .contact form textarea {
   height: 20rem;

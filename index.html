@@ -130,7 +130,7 @@
     <!-- skills section stars -->
 
     <section class="skills" id="skills">
-      <h1 class="heading"><span>our</span> skills</h1>
+      <h1 class="heading"><span>my</span> skills</h1>
       <div class="row">
         <div class="progress">
           <h3>php<span>65%</span></h3>
@@ -181,57 +181,32 @@
 
       <div class="box-container">
         <div class="box">
-          <i class="fas fa-code"></i>
+          <i class="fas fa-laptop-code"></i>
           <h3>web design</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem quas delectus, laboriosam nulla dolore in.
+            I can create a website <br />
+            Convert PSD or design to webpage
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-code"></i>
+          <h3>Development</h3>
+          <p>
+            Create website with <br />
+            React, Bootstrap, Laravel
           </p>
         </div>
 
         <div class="box">
-          <i class="fas fa-paint-brush"></i>
-          <h3>graphic design</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem quas delectus, laboriosam nulla dolore in.
-          </p>
+          <i class="fas fa-database"></i>
+          <h3>DataBases</h3>
+          <p>Create DataBases <br />Mysql, Oracle, Sql</p>
         </div>
 
         <div class="box">
-          <i class="fas fa-mobile"></i>
-          <h3>responsive design</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem quas delectus, laboriosam nulla dolore in.
-          </p>
-        </div>
-
-        <div class="box">
-          <i class="fas fa-bullhorn"></i>
-          <h3>digital marketing</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem quas delectus, laboriosam nulla dolore in.
-          </p>
-        </div>
-
-        <div class="box">
-          <i class="fas fa-search-dollar"></i>
-          <h3>SEO marketing</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem quas delectus, laboriosam nulla dolore in.
-          </p>
-        </div>
-
-        <div class="box">
-          <i class="fab fa-wordpress"></i>
-          <h3>wordpress</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem quas delectus, laboriosam nulla dolore in.
-          </p>
+          <i class="fas fa-sitemap"></i>
+          <h3>Application Modeling</h3>
+          <p>I can create and build uml <br />diagrams.</p>
         </div>
       </div>
     </section>
@@ -419,29 +394,34 @@
     <section class="contact" id="contact">
       <h1 class="heading"><span>contact</span> me</h1>
 
-      <form action="">
+      <form action="https://formsubmit.co/kechicheb.dz@gmail.com" method="POST">
         <div class="input-row">
-          <input type="text" placeholder="your name" class="box" />
-          <!-- <div class="error">Please enter your name</div> -->
+          <input type="text" placeholder="your name" class="box" name="name" />
+          <div class="error">Please enter your name</div>
         </div>
         <div class="input-row">
-          <input type="email" placeholder="your email" class="box" />
-                    <!-- <div class="error">Please enter your email</div> -->
+          <input
+            type="email"
+            placeholder="your email"
+            class="box"
+            name="email"
+          />
+          <div class="error">Please enter your email</div>
         </div>
         <div class="input-row">
-          <input type="text" placeholder="subject" class="box" />
-                    <!-- <div class="error">Please enter subject name</div> -->
+          <input type="text" placeholder="subject" class="box" name="subject" />
+          <div class="error">Please enter subject name</div>
         </div>
         <div class="input-row">
           <textarea
-            name=""
+            name="message"
             class="box"
             placeholder="your message"
             id=""
             cols="30"
             rows="10"
           ></textarea>
-                    <!-- <div class="error">Please enter your message</div> -->
+          <div class="error">Please enter your message</div>
         </div>
         <input type="submit" value="send message" class="btn" />
       </form>
@@ -455,6 +435,7 @@
 
     <!-- custom js file link  -->
     <script src="js/typed.js/typed.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

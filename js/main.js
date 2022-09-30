@@ -59,6 +59,53 @@ if (typed) {
 }
 
 //  Validate Form
+const [nname, email, subject, message] = document.forms[0];
+
 document.forms[0].onsubmit = () => {
-  
+  if (nname.value == "") {
+    nname.nextElementSibling.style.display = "block";
+    nname.style.border = "1px solid #dc3545";
+    return false;
+  } else {
+    nname.nextElementSibling.style.display = "none";
+    nname.style.border = "1px solid transparent";
+  }
+  if (
+    !email.value.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/) ||
+    email.value == ""
+  ) {
+    email.nextElementSibling.style.display = "block";
+    email.style.border = "1px solid #dc3545";
+    return false;
+  } else {
+    email.nextElementSibling.style.display = "none";
+    email.style.border = "1px solid transparent";
+  }
+  if (subject.value == "") {
+    subject.nextElementSibling.style.display = "block";
+    subject.style.border = "1px solid #dc3545";
+    return false;
+  } else {
+    subject.nextElementSibling.style.display = "none";
+    subject.style.border = "1px solid transparent";
+  }
+  if (message.value == "") {
+    message.nextElementSibling.style.display = "block";
+    message.style.border = "1px solid #dc3545";
+    return false;
+  } else {
+    message.nextElementSibling.style.display = "none";
+    message.style.border = "1px solid transparent";
+  }
+  sendEmail(email.value, subject.value, message.value);
 };
+
+function sendEmail(email, subject, body) {
+  Email.send({
+    SecureToken: "f275176c-3134-40ca-b734-19ded32127c4",
+    To: "kechicheb.dz@gmail.com",
+    From: `${email}`,
+    Subject: `${subject}`,
+    Body: `${body}`,
+  }).then((message) => "alert(message)");
+}
