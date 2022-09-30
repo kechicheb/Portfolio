@@ -57,3 +57,8 @@ if (typed) {
     backDelay: 2000,
   });
 }
+
+//  Validate Form
+document.forms[0].onsubmit = () => {
+  
+};
