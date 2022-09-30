@@ -213,9 +213,10 @@ section:not(:first-child) {
 
 .home .content p {
   font-size: 26px;
-  color: var(--green);
   padding-block: 1rem;
+  color: var(--green);
 }
+
 @media (max-width: 992px) {
   .home .content h3 {
     font-size: 32px;
@@ -365,7 +366,7 @@ section:not(:first-child) {
 
 .services .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 2rem;
 }
 
