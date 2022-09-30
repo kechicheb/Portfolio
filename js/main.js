@@ -109,3 +109,10 @@ function sendEmail(email, subject, body) {
     Body: `${body}`,
   }).then((message) => "alert(message)");
 }
+
+let seeMore = document.querySelector("#seeMore");
+let moreBoxs = document.querySelector(".projects .box-container:last-child");
+seeMore.onclick = () => {
+  seeMore.parentElement.remove();
+  moreBoxs.style.display = "grid";
+};

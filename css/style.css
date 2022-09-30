@@ -440,6 +440,12 @@ section:not(:first-child) {
   gap: 2rem;
 }
 
+
+.projects #seeMore {
+  margin-top: 40px;
+  width: fit-content;
+  margin-inline:auto ;
+}
 .projects .box-container .box {
   height: fit-content;
   border-radius: 0.5rem;
@@ -448,7 +454,9 @@ section:not(:first-child) {
   position: relative;
   border: 1rem solid transparent;
 }
-
+.projects .box-container:last-child {
+  display: none;
+}
 .projects .box-container .box img {
   height: 100%;
   width: 100%;
