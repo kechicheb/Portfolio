@@ -23,12 +23,14 @@ themeToggler.onclick = () => {
     localStorage.setItem("darkMode", false);
   }
 };
-window.onload = () => {
+
+window.addEventListener("load", () => {
   if (localStorage.getItem("darkMode") == "true") {
     document.body.classList.add("active");
     themeToggler.classList.add("fa-sun");
   }
-};
+  document.querySelector("#preloader").remove();
+});
 // animation
 
 const skills = document.querySelector("#skills");
@@ -100,6 +102,7 @@ document.forms[0].onsubmit = () => {
   sendEmail(email.value, subject.value, message.value);
 };
 
+// Contect
 function sendEmail(email, subject, body) {
   Email.send({
     SecureToken: "f275176c-3134-40ca-b734-19ded32127c4",
