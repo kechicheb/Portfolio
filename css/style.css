@@ -366,6 +366,7 @@ section:not(:first-child) {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
 }
 .about .row .text h3 {
   margin-top: 30px;
@@ -378,15 +379,20 @@ section:not(:first-child) {
   color: var(--green);
 }
 
+
 .about .row .box-container {
   flex: 1 1 100%;
-  display: flex;
+  display:grid;
   gap: 1.5rem;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-
+@media (max-width:600px) {
+  .about .row .box-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .about .row .box-container .box {
-  flex: 1 1 230px;
+  min-width: 138px;
   text-align: center;
   padding: 2rem;
   border-radius: 0.5rem;
