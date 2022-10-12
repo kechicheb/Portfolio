@@ -29,6 +29,8 @@ window.addEventListener("load", () => {
     document.body.classList.add("active");
     themeToggler.classList.add("fa-sun");
   }
+});
+window.addEventListener("load", () => {
   document.querySelector("#preloader").remove();
 });
 // animation
